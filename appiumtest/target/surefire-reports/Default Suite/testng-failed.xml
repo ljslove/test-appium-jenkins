@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Default Suite]">
+  <listeners>
+    <listener class-name="TestListener"/>
+    <listener class-name="RetryListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="appiumtest(failed)">
+    <classes>
+      <class name="LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- LoginTest -->
+    </classes>
+  </test> <!-- appiumtest(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
